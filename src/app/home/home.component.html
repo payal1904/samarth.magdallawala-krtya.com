@@ -1,0 +1,282 @@
+<!-- <app-search></app-search> -->
+
+    <!-- <app-tags></app-tags> -->
+    
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-left: 252px;position: flex;width: 82.3%;" >
+
+      <!-- Indicators/dots -->
+     <div class="main"></div>
+      <div class="carousel-inner" style="margin-left: -1px; position: flex; width: 103.3%;" >
+        <div class="carousel-item active" >
+          <img src="assets/carousel-1.jpg" alt="Los Angeles" class="d-block w-100" >
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+           <div class="p-3" style="max-width: 700px;">
+              <h2 class="text-light text-uppercase font-weight-medium mb-3" style="margin-right: 15px; font-size: 2 rem;">10% Off Your First Order</h2>
+               <h3 class="display-4 text-white font-weight-semi-bold mb-4"style="margin-right: 15px;">Fashionable Dress</h3>
+            <a (click)="clicktoProduct()" class="btn btn-light py-2 px-3" style="margin-right: 15px;">Shop Now</a>
+               </div>
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <img src="assets/carousel-2.jpg" alt="Chicago" class="d-block w-100">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <h2 id="text" class="text-light text-uppercase font-weight-medium mb-3" style="margin-right: 15px;">10% Off Your First Order</h2>
+            <h3 id="text" class="display-4 text-white font-weight-semi-bold mb-4" style="margin-right: 15px;">Reasonable Price</h3>
+            <a id="text" (click)="clicktoProduct()" class="btn btn-light py-2 px-3" style="margin-right: 15px;">Shop Now</a>
+          </div>
+      </div>
+      </div>
+    
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" style="margin-left: 20px;">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" style="margin-left: 220px;">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+        
+     
+
+    
+      
+
+
+<!-- Featured Start -->
+<div class="container-fluid pt-5" style="margin: 0px 20%; z-index: 0;overflow-x: hidden; width: 80%;">
+<div class="row px-xl-5 pb-3">
+<div class="col-lg-3 col-md-6 col-sm-12 pb-1" >
+  <div class="d-flex align-items-center border mb-4" style="padding: 30px; ">
+      <h1 class="text m-3 mr-3" style="color: #d19c97;"><i class="fas fa-check"></i></h1>
+      <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 pb-1" >
+  <div class="d-flex align-items-center border mb-4" style="padding: 30px;  " >
+      <h1 class="text m-3 mr-3" style="color: #d19c97;"><i class="fas fa-shipping-fast"></i></h1>
+      <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 pb-1" >
+  <div class="d-flex align-items-center border mb-4" style="padding: 30px; ">
+      <h1 class="text m-3 mr-3" style="color: #d19c97; "><i class="fas fa-exchange-alt"></i></h1>
+      <h5 class="font-weight-semi-bold m-0">14-Day Return</h5>
+  </div>
+</div>
+
+</div>
+</div>
+    
+    
+    
+    
+    
+    <h2 class="new">New product</h2>
+
+<ul>
+    <li  *ngFor="let food of Cloths">
+        <a>
+        <img src="{{food.imageUrl}}" alt="cloth img" class="img"  routerLink="/food/{{food.id}}">
+        <div class="content">
+           <div class="name">
+           {{food.name}}
+           <p (click)="toggle(food)" class="favorite {{food.favorite?'':'not'}}"><i class="fa-solid fa-heart"></i></p>
+           </div>
+           
+           <div class="tags">
+            {{food.tags}}
+           </div>
+           <div class="price">
+            {{food.price|currency}}
+            <span class="star">
+                {{food.star}}
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+           </div>
+           <div class="product-item-footer">
+           <!-- <div class="origins">
+            {{food.origins}}
+           </div> -->
+        </div>
+        </div>
+        </a>
+    </li>
+</ul>  
+<!-- <div class="box">
+<img  src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/SS22/AFpage/FST-pc-Eng.jpg" alt="FST">
+</div>
+<div class="bxc">
+<img  src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/SS22/AFpage/L1headers/KIDS/V1/fg.jpg" alt="Top Banner Kids">
+</div> -->
+
+<br>
+<br>
+<style>
+  .overlay{
+    background-image: url('assets/baner2.jpg');
+    background-repeat: no-repeat;
+  }
+  .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
+    float:left;
+  }
+</style>
+<div id="top" style="margin-left: 100px;width: 89.8%;">
+
+
+  <div class="overlay" style="position: flex;width: 100%;" >
+    
+    <div id="pageintro" class="hoc clear" style="margin-left: 200px;  color: black;"> 
+      <article>
+        <h3 class="heading" >Dapibus ligula convallis</h3>
+        <p style="margin-top: -30px; font-weight:16px bold;">A massa etiam augue nunc lectus duis eget libero non nisi lobortis suscipit praesent viverra nam dapibus orci non erat aliquam erat volutpat.</p>
+        <footer><a class="btn" href="#">Gravida sem neque</a></footer>
+      </article>
+    </div>
+  </div>
+
+
+
+<div class="wrapper row3" style="position: flex;width: 100%;">
+  <main class="hoc container clear"> 
+    
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80">
+        <li class="one_third first">
+          <figure><a class="imgover" href="#"><img src="assets/y1.jpg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Mollis suscipit</h6>
+              <div>
+                <p>Eu adipiscing sit amet ante donec vulputate magna duis posuere tellus vel fringilla auctor nisi arcu.</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="#"><img src="assets/y2.jpg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Vestibulum maecenas</h6>
+              <div>
+                <p>Urna at congue lectus nisi ac neque suspendisse vitae sapien eu mi placerat tincidunt sed eget elit in.</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><a class="imgover" href="#"><img src="assets/y3.jpg" alt=""></a>
+            <figcaption>
+              <h6 class="heading">Pellentesque enim</h6>
+              <div>
+                <p>Imperdiet pede sit amet elit aenean sollicitudin eros quis cursus feugiat lacus diam tempor tortor vel.</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    
+    
+
+
+<div class="offer">
+  <h1 class="sale">top sales</h1>   
+  <div class="container">
+      <div class="row">
+         
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <a>
+                  <div class="offer-box text-center position-relative">
+                      <div class="offer-inner">
+                          <div class="offer-image position-relative overflow-hidden">
+                              <img src="/assets/short-c.jpg" alt="offer" class="img-fluid">
+                              <div class="offer-overlay"></div>
+                          </div>
+
+                          <div class="offer-info">
+                              <p class="heading-bigger text-capitalize">SALE 30%</p>
+                              <P class="offer-title-1 text-uppercase font-weight-bold">Don't miss this chance</P>
+                              <button (click)="Clicktosale()" type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                                  shop now
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div> 
+
+          <!--offer box two-->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4 d-flex flex-column justify-content-between">
+              <a>
+                  <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                      <div class="offer-inner">
+                          <div class="offer-image position-relative overflow-hidden">
+                              <img src="/assets/sd.jpg" alt="offer" class="img-fluid">
+                              <div class="offer-overlay"></div>
+                          </div>
+
+                          <div class="offer-info">
+                              <div class="offer-info-inner">
+                                  <p class="heading-bigger text-capitalize">SALE 70%</p>
+                                  <P class="offer-title-1 text-uppercase font-weight-bold">Don't miss this chance</P>
+                                  <button (click)="Clicktosale()" type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                                      shop now
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              <br>
+              <a>
+                  <div class="offer-box text-center position-relative ">
+                      <div class="offer-inner">
+                          <div class="offer-image position-relative overflow-hidden">
+                              <img src="/assets/hh2.jpeg" alt="offer" class="img-fluid">
+                              <div class="offer-overlay"></div>
+                          </div>
+
+                          <div class="offer-info">
+                              <div class="offer-info-inner">
+                                  <p class="heading-bigger text-capitalize">SALE 50%</p>
+                                  <P class="offer-title-1 text-uppercase font-weight-bold">Don't miss this chance</P>
+                                  <button (click)="Clicktosale()" type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                                      shop now
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+
+          </div>
+
+          <!--offer box three-->
+          <div class="col-sm-6 col-lg-4 mb-lg-0 mb-4">
+              <a>
+                  <div class="offer-box text-center position-relative">
+                      <div class="offer-inner">
+                          <div class="offer-image position-relative overflow-hidden">
+                              <img src="/assets/hh1.jpg" alt="offer" class="img-fluid">
+                              <div class="offer-overlay"></div>
+                          </div>
+
+                          <div class="offer-info">
+                              <p class="heading-bigger text-capitalize">SALE 25%</p>
+                              <P class="offer-title-1 text-uppercase font-weight-bold">Don't miss this chance</P>
+                              <button (click)="Clicktosale()" type="button" class="btn btn-outline-danger text-uppercase mt-4">
+                                  shop now
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+
+      </div>
+  </div>
+</div>
+</main>
+
+<!-- footer -->
+<app-footer></app-footer>
+
+    

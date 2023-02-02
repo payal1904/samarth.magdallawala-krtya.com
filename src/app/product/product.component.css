@@ -1,0 +1,245 @@
+body {
+  margin-right: 0;
+  overflow-x: hidden;
+  z-index: 0;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: 220px;
+}
+
+ul li a {
+  height: 35rem;
+  width: 20rem;
+  border: 3px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #e72929;
+  text-decoration: none;
+}
+li a:hover {
+  box-shadow: rgba(0, 0, 0, 0.355) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+ 
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: white;
+}
+
+.new {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem 0.15rem;
+  color: darkblue;
+  font-size: 30px;
+}
+
+.content {
+  padding: 0.5rem 1em;
+  position: relative;
+  text-align: center;
+  color: #424242;
+}
+.favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #e72929;
+}
+.favorite.not {
+  color: black;
+}
+.star {
+  line-height: normal;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 4px 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  vertical-align: middle;
+  background-color: #388e3c;
+  margin-left: 4rem;
+}
+.product-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.origins {
+  flex: 9;
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  color: gray;
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
+  display: inline-block;
+}
+.price {
+  color: #424242;
+  margin-top: 0.2rem;
+}
+.tags {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.img {
+  height: 1000px;
+}
+.bxc {
+  width: fit-content;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.name {
+  font-weight: bold;
+  text-decoration: none;
+}
+.box {
+  display: inline-block;
+  padding: 0;
+}
+
+.catagories{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+    margin-left: 400px;
+    position: flex;
+    width: 60%;
+}
+button{
+color: #388e3c;
+margin: 1%;
+}
+.catagories .main{
+    color: black;
+    height: 2.2rem;
+    width: 8rem;
+    margin-top: 8rem;
+    border: none;
+    opacity: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:-63px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background-color: #e8e4e4;
+    border-radius: 10rem;
+   
+}
+.catagories .main:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    border-radius: 10rem;
+
+}
+
+
+/* #388e3c */
+
+/* ---------------------------------------------- */
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #002bff,
+    #002bff,
+    #002bff,
+    #002bff,
+    #002bff,
+    #002bff,
+    #002bff,
+    #002bff,
+    #002bff
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: transparent;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+} */

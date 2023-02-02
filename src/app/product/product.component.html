@@ -1,0 +1,50 @@
+<div class="catagories">
+  
+  <button class="main" (click)="clicktoWomen()">Women</button>
+  <button class="main" (click)="clicktoMen()">Men</button>
+  <button class="main" (click)="clicktoOthers()">Others</button>
+</div>
+
+
+
+<ul>
+    <li  *ngFor="let food of Cloths">
+        <a >
+        <img src="{{food.imageUrl}}" alt="cloth img" class="img" routerLink="/food/{{food.id}}">
+        <div class="content">
+           <div class="name">
+           {{food.name}}
+           <span id="main" (click)="toggle(food)" class="favorite {{food.favorite?'':'not'}}">
+            <i class="fa-solid fa-heart"></i></span>
+            <!-- {{food.favorite?'':''}} -->
+           </div>
+           <!-- <script>
+            var main = document.getElementById('main');
+             function toggle(){
+              if(main.style.color == "red"){
+                main.style.color ="black"
+              }
+              else{
+                main.style.color ="red"
+              }
+             }
+           </script> -->
+           <div class="tags">
+            {{food.tags}}
+           </div>
+           <div class="price">
+            {{food.price|currency}}
+            <span class="star">
+                {{food.star}}
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+           </div>
+           <div class="product-item-footer">
+           <!-- <div class="origins">
+            {{food.origins}}
+           </div> -->
+        </div>
+        </div>
+        </a>
+    </li>
+</ul>  

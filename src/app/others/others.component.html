@@ -1,0 +1,34 @@
+<div class="catagories">
+  
+    <button class="main" (click)="clicktoWomen()">Women</button>
+    <button class="main" (click)="clicktoMen()">Men</button>
+    <button class="main" (click)="clicktoOthers()">Others</button>
+</div>
+<ul>
+    <li *ngFor="let other of others">
+        <a >
+        <img src="{{other.imageUrl}}" alt="cloth" routerLink="/other/{{other.id}}">
+        <div class="content">
+            <div class="name">
+                {{other.name}}
+                <span (click)="toggle(other)"  class="favorite {{other.favorite?'':'not'}}"><i class="fa-solid fa-heart"></i></span>
+            </div>
+            <div class="tags">
+                {{other.tags}}
+               </div>
+               <div class="price">
+                {{other.price|currency}}
+                <span class="star">
+                    {{other.star}}
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+               </div>
+               <div class="product-item-footer">
+               <!-- <div class="origins">
+                {{food.origins}}
+               </div> -->
+            </div>
+        </div>
+    </a>
+    </li>
+</ul>

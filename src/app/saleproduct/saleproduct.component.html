@@ -1,0 +1,35 @@
+<div class="container">
+     
+    <img [src]="sale.imageUrl" [alt]="sale.name">
+
+<div class="details">
+    <div class="header">
+        <span class="name">
+            {{sale.name}}
+        </span>
+        <!-- <span id="main"  class="favorite {{mencloth.favorite?'':'not'}}">
+            <i class="fa-solid fa-heart"></i>
+        </span> -->
+        
+    </div>
+    <div class="origins">
+        <span>
+        {{sale.origins}}
+    </span>
+    </div>
+    <div class="tag">
+        <app-tags [productPagetags]="sale.tags" justifyContent="start"></app-tags>
+    </div>
+    <div class="price">
+        <span>
+            {{sale.price | currency}}
+        </span>
+        <span class="star">
+            {{sale.star}}
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </span>
+    </div>
+    <button (click)="addToCart()">Add to cart</button>
+</div>
+
+</div>

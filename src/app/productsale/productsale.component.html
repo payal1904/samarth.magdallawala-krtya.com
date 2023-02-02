@@ -1,0 +1,36 @@
+<ul>
+    <li  *ngFor="let sale of sale">
+        <a routerLink="/sale/{{sale.id}}">
+        <img src="{{sale.imageUrl}}" alt="cloth img" class="img"  routerLink="/food/{{sale.id}}">
+        <div class="content">
+           <div class="name">
+           {{sale.name}}
+           <p (click)="toggle(sale)" class="favorite {{sale.favorite?'':'not'}}"><i class="fa-solid fa-heart"></i></p>
+           </div>
+           
+           <!-- <div class="tags">
+            {{sale.tags}}
+           </div> -->
+           <div class="price">
+            {{sale.price|currency}}
+        </div>
+            <div class="cprice">
+                
+                ${{sale.canclledprice}}
+
+            <span class="star">
+                {{sale.star}}
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </span>
+           
+           <div class="product-item-footer">
+           <!-- <div class="origins">
+            {{food.origins}}
+           </div> -->
+        </div>
+        </div>
+       
+        </div>
+        </a>
+    </li>
+</ul>  
