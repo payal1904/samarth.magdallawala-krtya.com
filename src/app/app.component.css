@@ -1,0 +1,101 @@
+*{
+    box-sizing: 0;
+    /* width: 100%; */
+}
+body{
+    margin-top: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a{
+    align-items: center;
+    justify-content: center;
+    margin-left: 94%;
+    margin-top: 0px;
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+    border: none;
+    text-decoration: none;
+    color: black;
+    opacity: .8;
+    outline: none;
+    font-size: 25px;
+ 
+}
+a:hover{
+    opacity: 1;
+    cursor: pointer;
+    color: rgb(88, 158, 238);
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+a.logo{
+
+    font-weight: bold;
+    padding: 0.1em;
+
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+   /* margin-right: -70%; */
+
+}
+
+.cart{
+  margin-top: 20px;
+}
+
+ul li a{
+    padding: 0.9em;
+    margin-left: 70%;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-left: 83%;
+    position: flex;
+    width: 85%;
+    margin-top: 15px;
+    padding: 20px;
+    
+  }
+
+ button{
+    align-items:flex-end;
+    justify-content: center;
+    /* margin-left: 90%; */
+    margin-top: 20px;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color:#f7c1f4;
+    color: black;
+    opacity: .8;
+    outline: none;
+    flex-wrap: wrap;
+    font-weight: bold;
+   font-family:'Courier New', Courier, monospace;
+}
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+}

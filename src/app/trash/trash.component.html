@@ -1,0 +1,20 @@
+<div *ngIf="cart && cart.items.length >0" class="container">
+    <ul>
+      <li *ngFor="let cartItem of cart.items">
+        <div>
+          <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name" />
+        </div>
+        <div class="name">
+            <a routerLink="/food/{{cartItem.food.id}}">
+                {{cartItem.food.name}}
+            </a>
+        </div>
+        
+        <div>
+            {{cartItem.price |currency}}
+        </div>
+       
+      </li>
+    </ul>
+    
+   

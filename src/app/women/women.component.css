@@ -1,0 +1,144 @@
+body{
+    margin-right: 0;
+    overflow-x: hidden;
+    z-index: 0;
+  }
+  ul {
+      display:flex;
+      justify-content:center ;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+     margin-left: 220px;
+      
+      }
+      ul li a{
+          height: 30rem;
+          width: 20rem;
+          border: 3px solid whitesmoke;
+          border-radius: 1rem;
+          margin: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          color: #e72929;
+          text-decoration: none;
+         
+      }
+      li a:hover{
+          opacity: 0.9;
+          cursor: pointer;
+          
+      }
+      
+      a:hover{
+         background-color: white;
+      }
+      .content {
+        padding: .5rem 1em;
+        position: relative;
+        text-align: center;
+        color: #424242;
+    }
+    .favorite{
+        position: absolute;
+        top:.5rem;
+        right: 1rem;
+        font-size: 1.2rem ;
+        color: #e72929;
+    }
+    .favorite.not{
+        color:black;
+    }
+    .star{
+        line-height: normal;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    vertical-align: middle;
+    background-color: #388e3c;
+    margin-left: 4rem;
+    }
+    .product-item-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .origins{
+        flex:9 ;
+        border-radius: 2rem;
+        background-color: whitesmoke;
+        color: gray;
+        font-size: .9rem;
+        margin-right: .3rem;
+        display: inline-block;
+    }
+    .price{
+        color: #424242;
+        margin-top: .2rem;
+    }
+    .tags{
+        font-family:"Times New Roman",Times,serif;
+        font-weight: bold;
+    }
+    .img{
+        height:1000px;
+      
+    }
+    .bxc{
+        width: fit-content;
+        vertical-align: middle;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+.name{
+    font-weight: bold;
+    text-decoration: none;
+}
+.box{
+    display: inline-block;
+    padding: 0;
+}
+
+.catagories{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+    margin-left: 400px;
+    position: flex;
+    width: 60%;
+}
+button{
+color: #388e3c;
+margin: 1%;
+}
+.catagories .main{
+    color: black;
+    height: 2.2rem;
+    width: 8rem;
+    margin-top: 8rem;
+    border: none;
+    opacity: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:-63px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background-color: #e8e4e4;
+    border-radius: 10rem;
+   
+}
+.catagories .main:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    border-radius: 10rem;
+
+}
